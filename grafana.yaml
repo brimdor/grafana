@@ -49,7 +49,7 @@ spec:
             - containerPort: 3000
               name: grafana
       volumes:
-        - name: galifray-root
+        - name: data
           nfs:
             # Use your NFS Server's IP
             server: 192.168.1.181
