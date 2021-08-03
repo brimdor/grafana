@@ -13,10 +13,9 @@ spec:
   selector:
     app: grafana
   type: LoadBalancer
-  loadBalancerIP: 192.168.1.14
+  loadBalancerIP: 192.168.1.16
 
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -51,5 +50,5 @@ spec:
       volumes:
         - name: data
           nfs:
-            server: 192.168.1.2
+            server: 192.168.1.181
             path: /volume2/grafana
