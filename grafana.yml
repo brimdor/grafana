@@ -4,6 +4,7 @@ metadata:
   name: grafana-tcp
   labels:
     app: grafana
+  namespace: grafana
 spec:
   ports:
     - name: grafana
